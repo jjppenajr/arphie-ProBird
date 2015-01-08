@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <style type="text/css">
+    .step_box {
+        border: 1.0px solid rgb(204, 204, 204);
+        border-radius: 10.0px 10.0px 10.0px 10.0px;
+    }
+    .step_box:hover, #selected_step_box, .QuickStartLong:hover {
+        background: rgb(184, 225, 252);
+    }
+    .selected {
+        background-color : #fff000;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+    $( document ).ready( function(){
+        $('.step_wrapper').on('click','.step_box',function () {
+             $('.step_box').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+    </script>
+    </head>
+    <body>
+    <div class="step_wrapper">
+    <div class="step_box" > <span>Content of page 1</span></div>
+    <div class="step_box" > <span>Content of page 2</span></div>
+    <div class="step_box" > <span>Content of page 3</span></div>
+    </div>
+    </body>
+    </html>

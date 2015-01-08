@@ -1,0 +1,30 @@
+#container{
+	width: 400px;
+	height: 200px;
+	background-color: red;
+}
+#new_container{
+	width:40%;
+	height: 20%;
+	background-color: blue;
+}
+#order_main{
+		width:40%;
+		margin:auto;
+		height:150px;
+		text-align: center;
+		border-left:1px solid;
+		border-right:1px solid;
+		border-bottom:1px solid;
+		background-color: red;
+		margin-top: 5%;
+}
+#order_items{
+	width:100%;
+	margin:auto;
+	text-align: center;
+	background-color: blue;
+}
+#order_items table{
+	margin:auto;
+}

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode
+END
+black.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/black.png
+END
+FreeSansBold.ttf
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/FreeSansBold.ttf
+END
+white.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/white.png
+END
+barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/barcode.php
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/CHANGELOG
+END
+barcode_image.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/barcode_image.php
+END
+encode_bars.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/encode_bars.php
+END
+php-barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/php-barcode.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/arphie.ProBird/!svn/ver/2/trunk/probirdv10/inc/barcode/README
+END

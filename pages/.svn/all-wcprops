@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages
+END
+salesMenu.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/salesMenu.php
+END
+inventory.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/inventory.php
+END
+addSale.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/addSale.php
+END
+pos_ui.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/pos_ui.php
+END
+bankingMenu.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/bankingMenu.php
+END
+addBankAccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/addBankAccount.php
+END
+transferInventory.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/transferInventory.php
+END
+productDetail.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/productDetail.php
+END
+depositToBank.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/depositToBank.php
+END
+fs.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/fs.php
+END
+withdrawFromBank.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/withdrawFromBank.php
+END
+releaseorder.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/releaseorder.php
+END
+adminMenu.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/adminMenu.php
+END
+receiveOrder.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/receiveOrder.php
+END
+viewPoDetails.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/viewPoDetails.php
+END
+viewPaidSalesOrders.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/viewPaidSalesOrders.php
+END
+addPurchaseOrder.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/addPurchaseOrder.php
+END
+inventoryR.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/inventoryR.php
+END
+addExpense.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/addExpense.php
+END
+inventoryS.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/inventoryS.php
+END
+pages_style.css
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/pages_style.css
+END
+viewSoDetails.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/viewSoDetails.php
+END
+inventoryW.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/inventoryW.php
+END
+addOrder.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/addOrder.php
+END
+deliverorder.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/deliverorder.php
+END
+pos_functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/pos_functions.php
+END
+cashflow.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/cashflow.php
+END
+addAccountTitle.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/addAccountTitle.php
+END
+recordpayment.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/recordpayment.php
+END
+addSalesOrder.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/addSalesOrder.php
+END
+bankAcctDetails.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/bankAcctDetails.php
+END
+delBankAccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/delBankAccount.php
+END
+newSupplier.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/newSupplier.php
+END
+accountingMenu.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/accountingMenu.php
+END
+viewSalesOrders.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/viewSalesOrders.php
+END
+purchasesMenu.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/purchasesMenu.php
+END
+viewPurchaseOrders.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/viewPurchaseOrders.php
+END
+viewPaidOrders.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arphie.ProBird/!svn/ver/4/trunk/probirdv11/pages/viewPaidOrders.php
+END
