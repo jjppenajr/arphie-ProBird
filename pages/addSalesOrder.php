@@ -139,11 +139,11 @@ function xButton(){//edit
 				<td>
 					<select  data-placeholder="Choose an Item..." class="item_desc2" name="item_desc2[0]" onclick="getCode(this);" onchange="getCode(this);"><option selected></option><?php $db->ddl_itemsExisting(); ?></select>
 				</td>
-				<td><input type='text' name='item_size[0]' class='item_size' /></td>
-				<td><input type='text' name='item_color[0]' class='item_color' /></td>
+				<td><input disabled type='text' name='item_size[0]' class='item_size' /></td>
+				<td><input disabled type='text' name='item_color[0]' class='item_color' /></td>
 				<td><input type="number" name="item_qty[0]" class="item_qty" value='0' onkeyup='comp_amount(this)' onkeyup='comp_amount(this)'	 /></td>
 				<td><input type="text" name="unit_price[0]" class="unit_price" value='0' onkeyup='comp_amount(this)' onkeyup='comp_amount(this)' /></td>
-				<td><input type="text" name="item_amount[0]" class="item_amount" disabled value="0" /></td>
+				<td><input disabled type="text" name="item_amount[0]" class="item_amount" disabled value="0" /></td>
 				<td><input onclick="addsaleitem(this)" type="button" value="ADD" id="myButton1"></input></td>
 			</tr>
 			<input type="hidden" name='len' id="item_length" value="1" />

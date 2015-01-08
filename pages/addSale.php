@@ -12,11 +12,10 @@
 	function backSales(){
 		$("#dp_content").load("pages/salesMenu.php");
 	}
-
 </script>
 <body>
 <h2>ADD SALE</h2>
-<form method="post" action="index.php" onsubmit = "return validate_form(this)">
+<form name="addSaleForm" method="post" action="index.php">
 		<div id="order_main">
 			<table id="om_table">
 				<tr>
@@ -30,7 +29,7 @@
 						<b>TOTAL:  </b>
 					</td>
 					<td>
-						<input type="text" id="tot_po" name="tot_sale" />
+						<input disabled type="text" id="tot_po" name="tot_sale" />
 					</td>
 				</tr>
 			</table>
@@ -53,8 +52,8 @@
 					<td>
 						<select  data-placeholder="Choose an Item..." class="item_desc2" name="item_desc2[0]" onclick="getCode(this);" onchange="getCode(this);"><option selected></option><?php $db->ddl_itemsExisting(); ?></select>
 					</td>
-					<td><input type='text' name='item_size[0]' class='item_size' /></td>
-					<td><input type='text' name='item_color[0]' class='item_color' /></td>
+					<td><input type='text'  name='item_size[0]' class='item_size' disabled /></td>
+					<td><input type='text' name='item_color[0]' class='item_color' disabled /></td>
 					<td><input type="number" name="item_qty[0]" class="item_qty" value='0' onkeyup='comp_amount(this)' onkeyup='comp_amount(this)'	 /></td>
 					<td><input type="text" name="unit_price[0]" class="unit_price" value='0' onkeyup='comp_amount(this)' onkeyup='comp_amount(this)' /></td>
 					<td><input type="text" name="item_amount[0]" class="item_amount" disabled value="0" /></td>
@@ -73,7 +72,8 @@
 			
 
 </form>
-<script src="jquery/jquery-latest.min.js" type="text/javascript"></script>
+	<!--script src="script/validation.js" type="text/javascript"></script-->
+	<script src="jquery/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="jquery/jquery.min.js" type="text/javascript"></script>
   <link rel="stylesheet" href="scripts/chosen_v1.1.0/chosen.css">   
   <script src="scripts/chosen_v1.1.0/chosen.jquery.js" type="text/javascript"></script>
@@ -85,45 +85,5 @@
     for (var selector in config) {
       $(selector).chosen(config[selector]);
     }
-
-    function validate_required(field,alerttxt){
-	with (field){
-	if (value==null||value==""){
-		alert(alerttxt);return false;
-	}
-	else{
-		return true;
-	}}
-	}
-	function validate_form(thisform){
-		
-	with (thisform){
-	if (document.salesForm.tot_sale.value==""){
-			alert("Total amount is required.");
-			document.salesForm.tot_sale.focus(); return false;}
-
-	if(document.salesForm.prod_no.value==""){
-		alert("Item code is required.");
-			document.salesForm.prod_no.focus(); return false;
-	}	
-
-	}}
-	function checkInteger(){
-		var number = document.salesForm.tot_sale.value;
-		
-		if (isFinite(number)==false){
-		 alert("Total must be an amount."); 
-		 document.salesForm.tot_sale.focus() ; return false;
-		}
-		
-		if(number_val<=0 ||  number_val == 0){
-		 alert("Total amount must be greater than 0."); 
-		 document.salesForm.tot_sale.focus() ; return false;
-		}
-
-		return(true);
-
-	}
-
   </script>
 </body>

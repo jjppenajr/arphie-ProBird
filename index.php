@@ -398,45 +398,106 @@
 		    }
 
 		}
+		/*Add Sale Form Validation Function*/
+		function validateAddSaleForm(index)
+		{
+
+			var numbers = /^[0-9]+$/;  
+			var x = document.getElementsByClassName("prod_no")[index].value;
+			if (x == null || x == "") {
+				noValueAlert();
+				document.getElementsByClassName("prod_no")[index].focus();
+				return false;
+		    }
+		    else if(/\D/.test(x))
+		    {
+		    	alert("Wrong format for item code! Please edit!")
+		    	document.getElementsByClassName("prod_no")[index].focus();
+		    	return false;
+		    }
+		    else
+		    {
+		    	x = document.getElementsByClassName("item_desc2")[index].value;
+				if (x == null || x == "") {
+					noValueAlert();
+					document.getElementsByClassName("item_desc2")[index].focus();
+					return false;
+			    }
+			    else
+			    {
+			    	x = document.getElementsByClassName("item_qty")[index].value;
+					if (x == null || x == "") {
+						noValueAlert();
+						document.getElementsByClassName("item_qty")[index].focus();
+						return false;
+				    }
+				    else if(/\D/.test(x))
+				    {
+				    	alert("Wrong format for item size! Please edit!")
+				    	document.getElementsByClassName("item_qty")[index].focus();
+				    	return false;
+				    }
+				    else
+				    {
+				    	x = document.getElementsByClassName("unit_price")[index].value;
+						if (x == null || x == "") {
+							noValueAlert();
+							document.getElementsByClassName("unit_price")[index].focus();
+							return false;
+					    }
+					    else if(!x.match(/^\d+(?:\.\d+)?$/))
+					    {
+					    	alert("Wrong format for price! Please edit!")
+					    	document.getElementsByClassName("unit_price")[index].focus();
+					    	return false;
+					    }
+				    }
+			    }
+			}
+		    return true;
+		}
 		function addsaleitem(c){
-			tbl = document.getElementById('tbl_oi');
-			// Create an empty <tr> element and add it to the 1st position of the table:
-			var row = tbl.insertRow(-1);
-
-			// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
-			var cell = row.insertCell(0);
-			var cell0 = row.insertCell(1);
-			var cell1 = row.insertCell(2);
-			var cell2 = row.insertCell(3);
-			var cell3 = row.insertCell(4);
-			var cell4 = row.insertCell(5);
-			var cell5 = row.insertCell(6);
-			var cell6 = row.insertCell(7);
+			//for validation
 			
-
 			// Add some text to the new cells:
 			var i_index = document.getElementById('item_length').value;
-			cell.innerHTML = '<input type="text" onkeyup="a_prodno(this,event)" name="prod_no['+i_index+']" id="prod_no['+i_index+']" class="prod_no" onchange="getItemDetails(this)" />';
-			cell0.innerHTML = '<select class="item_desc2" name="item_desc['+i_index+']" onclick="getCode(this);" onchange="getCode(this);"><option selected></option>'+"<?php $db->ddl_items(); ?>"+'</select>'
-			cell1.innerHTML = "<input type='text' name='item_size["+i_index+"]' class='item_size' />";
-			cell2.innerHTML = "<input type='text' name='item_color["+i_index+"]' class='item_color' />";
-			cell3.innerHTML = "<input type=\"number\" name=\"item_qty["+i_index+"]\" class=\"item_qty\" value='0' onkeyup='comp_amount(this)' onkeyup='comp_amount(this)'	 />";
-			cell4.innerHTML = "<input type=\"text\" name=\"unit_price["+i_index+"]\" class=\"unit_price\" value='0' onkeyup='comp_amount(this)' onkeyup='comp_amount(this)' />";
-			cell5.innerHTML = '<input type="text" name="item_amount['+i_index+']" class="item_amount" disabled value="0" />';
-			cell6.innerHTML = "<input onclick=\"addsaleitem(this)\" type=\"button\" value=\"ADD\" id=\"myButton1\"></input>";
 
+			if(validateAddSaleForm(i_index-1))
+			{
+				tbl = document.getElementById('tbl_oi');
+				// Create an empty <tr> element and add it to the 1st position of the table:
+				var row = tbl.insertRow(-1);
 
-			c.value = "X";
-			c.onclick=function() {deleteitem(c);} 
-			document.getElementById('item_length').value = parseInt(document.getElementById('item_length').value)+1; 
-			var config = {
-		      '.item_desc3'           : {},
-					 '.s_select'  : {}
-		    }
-		    for (var selector in config) {
-		      $(selector).chosen(config[selector]);
-		    }
+				// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+				var cell = row.insertCell(0);
+				var cell0 = row.insertCell(1);
+				var cell1 = row.insertCell(2);
+				var cell2 = row.insertCell(3);
+				var cell3 = row.insertCell(4);
+				var cell4 = row.insertCell(5);
+				var cell5 = row.insertCell(6);
+				var cell6 = row.insertCell(7);
+				
+				cell.innerHTML = '<input type="text" onkeyup="a_prodno(this,event)" name="prod_no['+i_index+']" id="prod_no['+i_index+']" class="prod_no" onchange="getItemDetails(this)" />';
+				cell0.innerHTML = '<select class="item_desc2" name="item_desc['+i_index+']" onclick="getCode(this);" onchange="getCode(this);"><option selected></option>'+"<?php $db->ddl_items(); ?>"+'</select>'
+				cell1.innerHTML = "<input disabled type='text' name='item_size["+i_index+"]' class='item_size' />";
+				cell2.innerHTML = "<input disabled type='text' name='item_color["+i_index+"]' class='item_color' />";
+				cell3.innerHTML = "<input type=\"number\" name=\"item_qty["+i_index+"]\" class=\"item_qty\" value='0' onkeyup='comp_amount(this)' onkeyup='comp_amount(this)'	 />";
+				cell4.innerHTML = "<input type=\"text\" name=\"unit_price["+i_index+"]\" class=\"unit_price\" value='0' onkeyup='comp_amount(this)' onkeyup='comp_amount(this)' />";
+				cell5.innerHTML = '<input type="text" name="item_amount['+i_index+']" class="item_amount" disabled value="0" />';
+				cell6.innerHTML = "<input onclick=\"addsaleitem(this)\" type=\"button\" value=\"ADD\" id=\"myButton1\"></input>";
 
+				c.value = "X";
+				c.onclick=function() {deleteitem(c);} 
+				document.getElementById('item_length').value = parseInt(document.getElementById('item_length').value)+1; 
+				var config = {
+			      '.item_desc3'           : {},
+						 '.s_select'  : {}
+			    }
+			    for (var selector in config) {
+			      $(selector).chosen(config[selector]);
+			    }
+			}
 		}
 		function focusId(id){
 			$('#'+id).focus();
